@@ -24,14 +24,14 @@ pnpm dev
 bun dev
 ```
 
-Folder Structure
+## Folder Structure
 components/: Contains UI components such as SearchBar, PaperCard, PaperModal, and Pagination.
 styles/: SCSS files for styling components using SCSS modules. Each component has a corresponding .module.scss file.
 utils/: Contains utility functions like api.js for handling API requests.
 Data Fetching
 All data is fetched asynchronously from the EasyDash API (https://easydash.enago.com/acceptedpapers). API calls are managed in a utility file (api.js), ensuring modularity and reusability. The app handles loading, success, and error states clearly to provide a smooth user experience.
 
-UI Display - Card Components
+ ## UI Display - Card Components
 Title
 Authors
 Year
@@ -40,14 +40,14 @@ Impact Factor
 PDF/Media Links (if available)
 The card layout is clean and professional, with placeholders for images when necessary. This ensures that the design is consistent and user-friendly.
 
-Search Functionality
+ ## Search Functionality
 A search bar is provided to filter papers by keywords. Users can select a category to search in, such as:
 Title
 Author
 Journal
 The search results are updated dynamically as the user types or selects a category. This feature provides an intuitive way to find relevant papers quickly.
 
-Sorting
+ ## Sorting
 Title (ascending/descending)
 Year (ascending/descending)
 Impact Factor (ascending/descending)
@@ -55,13 +55,13 @@ Sorting controls are implemented to allow users to easily organize papers in the
 Pagination
 Client-side pagination is used to break up large datasets into smaller, manageable chunks. Pagination controls allow users to navigate between pages with a clear indication of the current page and total results.
 
-Details View
+ ## Details View
 Each paper card includes a "View Details" button. Clicking on this button opens a detailed view of the paper in a modal or on a new page. The detailed view includes complete metadata such as:
 Title
 Authors
 Journal
 
-SCSS & Styling
+ ## SCSS & Styling
 SearchBar.module.scss: Styles for the search bar component, including the input field and category dropdown.
 PaperCard.module.scss: Styles for the paper card, including layout for paper details, author names, journal titles, and impact factor.
 PaperDetails.module.scss: Modal styles for displaying full paper details.
